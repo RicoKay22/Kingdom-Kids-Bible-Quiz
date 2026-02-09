@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="App-CSS/style.css">
+</head>
+
+<body class="result">
+
+  <div class="card" id="pdf-content">
+    <center><h1 id="app-name">Kingdom Kids Bible Quiz</h1></center>
+
+    <center><h2 id="user-score"></h2></center>
+    <center><p id="shoutout"></p></center>
+
+    <div id="result-container"></div>
+
+    <div class="result-actions">
+      <button id="replay-btn">Replay Quiz</button>
+      <button id="download-btn">Download PDF</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script type="module" src="App-js/result.js"></script>
+
+</body>
+</html>

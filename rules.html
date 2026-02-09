@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Rules</title>
+  <link rel="stylesheet" href="App-CSS/style.css" />
+</head>
+<body class="rules">
+  <div class="rules-card">
+    <h2>Quiz Rules</h2>
+    <ul id="rules"></ul>
+
+    <h3>As you attempt this quiz, may God grant you wisdom, knowledge and understanding.</h3>
+
+    <button onclick="exitQuiz()">Exit Quiz</button>
+    <button onclick="continueQuiz()">Continue</button>
+  </div>
+
+<script>
+const age = Number(sessionStorage.getItem('age'));
+const total = age <= 6 ? 20 : 30;
+
+const totalQuestions = total;
+const timePerQuestion = 15; 
+
+const rules = document.getElementById('rules');
+rules.innerHTML = `
+<li>You have ${timePerQuestion * totalQuestions} seconds to complete this quiz</li>
+<li>Once submitted, it can't be undone</li>
+<li>You can't exit while playing</li>
+<li>You are graded based on correct answers</li>
+<li>You have ${total} questions to answer</li>`;
+
+function exitQuiz(){ window.location.href = 'index.html'; }
+function continueQuiz(){ window.location.href = 'quiz.html'; }
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Kingdom Kids Bible Quiz</title>
+    <link rel="stylesheet" href="App-CSS/style.css" />
+</head>
+<body class="welcome">
+   <div class="card">
+    <h1>Kingdom Kids Bible Quiz</h1>
+
+    <div class="form-row">
+        <label for="name">Name:</label>
+        <input id="name" placeholder="Child's Name" />
+    </div>
+
+    <div class="form-row">
+        <label for="age">Age:</label>
+        <input id="age" type="number" placeholder="Age" />
+    </div>
+
+    <div class="form-row">
+        <label for="church">Church:</label>
+        <input id="church" placeholder="Church" />
+    </div>
+
+    <center><button onclick="startQuiz()">Start Quiz</button></center>
+</div>
+
+
+
+<script>
+function startQuiz(){
+    const name = document.getElementById('name').value;
+    const age = Number(document.getElementById('age').value);
+    const church = document.getElementById('church').value;
+
+
+    if(!name || !age || !church) return alert('Fill all fields');
+    if(age < 3 || age > 12) return alert('Age must be between 3-12');
+
+
+    sessionStorage.setItem('name', name);
+    sessionStorage.setItem('age', age);
+    sessionStorage.setItem('church', church);
+
+    window.location.href = 'rules.html';
+}
+</script>
+</body>
+</html>

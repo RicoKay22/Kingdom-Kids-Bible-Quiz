@@ -1,0 +1,363 @@
+body.welcome { background:url('../images/welcome-page.jpeg') center/cover; }
+body.quiz { background:url('../images/3-12-page.jpeg') center/cover; }
+body.rules { background:url('../images/rules-page.jpeg') center/cover; }
+body.result  { background: url("../images/result-page.jpeg") center; }
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;      
+  margin: 0;  
+  font-family: sans-serif;            
+}
+
+.card,
+.rules-card,
+.quiz-card,
+.result-card {
+  width: 90%;
+  max-width: 520px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 28px 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+
+/* styles for the welcome page */
+
+body.welcome h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+body.welcome button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+body.welcome button:hover {
+  background: #005ecb;
+}
+
+.form-row {
+  display: grid;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-row label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-row input {
+  width: 95%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-row input:focus {
+  border-color: #007bff;
+}
+
+
+
+/*  styles for the rules page */
+
+.rules-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #222;
+}
+
+.rules-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.rules-card ul li {
+  background: #f1f8ff;
+  border-left: 4px solid #007bff;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 17px;
+  color: #333;
+}
+
+.rules-card h3 {
+  font-size: 18px;
+  text-align: center;
+  margin: 18px 0 25px;
+  color: #444;
+  font-weight: normal;
+}
+
+.rules-card button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.rules-card button:first-of-type {
+  background: #ddd;
+  color: #333;
+}
+
+.rules-card button:last-of-type {
+  background: #007bff;
+  color: #fff;
+}
+
+.rules-card button:last-of-type:hover {
+  background: #005fcc;
+}
+
+
+
+/* styles for quiz page */
+.card {
+  width: 90%;
+  max-width: 520px;
+  background: rgba(185, 215, 219, 0.92);
+  border-radius: 14px;
+  padding: 25px 30px 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+
+#timer {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  background: rgb(172, 172, 219);
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#question-text {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  background: #f1f8ff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.option:hover {
+  background: #85a1c4;
+}
+
+.option.selected {
+  background: rgba(0, 123, 255, 0.15);
+  border-color: #4984c4;
+  color: #003d80;
+  font-weight: 600;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.navigation button {
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#prev-btn {
+  background: #ddd;
+}
+
+#next-btn {
+  background: #007bff;
+  color: white;
+}
+
+#progress {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #080000;
+  text-align: left;
+}
+
+
+#countdown-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#countdown-overlay.hidden {
+  display: none;
+}
+
+
+
+/* styles for result page */
+
+#user-score {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#shoutout {
+  margin-bottom: 25px;
+  font-size: 18px;
+   font-weight: bold;
+}
+
+
+/*styling for result page answers and explanation */
+
+.result-question p {
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+
+
+
+.result-question p.correct {
+  background-color: #e6f9ec;
+  color: #1e7f43;
+  border: 2px solid #2ecc71;
+  font-weight: bold;
+}
+
+
+.result-question p.wrong {
+  background-color: #fdecea;
+  color: #b02a1f;
+  border: 2px solid #e74c3c;
+  font-weight: bold;
+}
+
+
+.explanation {
+  background: #f1f5f9;
+  padding: 8px;
+  border-left: 4px solid #2563eb;
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+
+/* PDF download styling */
+
+body.pdf-mode {
+  background: white !important;
+  display: block !important;
+}
+
+/* Remove background images */
+body.pdf-mode,
+body.pdf-mode.result {
+  background-image: none !important;
+}
+
+/* Make card pure white & flat */
+body.pdf-mode .card,
+body.pdf-mode .result-card {
+  background: #ffffff !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* Hide buttons & nav */
+body.pdf-mode .result-actions,
+body.pdf-mode button,
+body.pdf-mode #replay-btn,
+body.pdf-mode #download-btn {
+  display: none !important;
+}
+
+/* Disable animations for clean layout */
+body.pdf-mode * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Ensure questions break nicely */
+body.pdf-mode .result-question {
+  page-break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+/* Improve spacing for print */
+body.pdf-mode h1,
+body.pdf-mode h2,
+body.pdf-mode h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+/* Mobile + PDF friendly font sizing */
+body.pdf-mode {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+@media print {
+  body {
+    background: white !important;
+  }
+
+ 
+}
