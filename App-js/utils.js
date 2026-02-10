@@ -1,4 +1,4 @@
-// Shuffle array (Fisher-Yates)
+// Shuffle array
 export function shuffleArray(array) {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {

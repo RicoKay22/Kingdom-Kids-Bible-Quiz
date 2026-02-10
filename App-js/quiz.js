@@ -2,13 +2,13 @@ import { shuffleArray } from "./utils.js";
 import { questions3to6 } from "./data-3-6.js";
 import { questions7to12 } from "./data-7-12.js";
 
-/* ------------------ SAFETY CHECK ------------------ */
+/*  age safety check*/
 const age = Number(sessionStorage.getItem("age"));
 if (!age) {
   window.location.href = "index.html";
 }
 
-/* ------------------ QUESTION SETUP ------------------ */
+/* question setup*/
 const TOTAL_QUESTIONS = age <= 6 ? 20 : 30;
 const QUESTION_POOL = age <= 6 ? questions3to6 : questions7to12;
 
@@ -21,7 +21,7 @@ questions = questions.map(q => ({
 let currentIndex = 0;
 let userAnswers = new Array(questions.length).fill(null);
 
-/* ------------------ DOM ELEMENTS ------------------ */
+/* dom element */
 const questionText = document.getElementById("question-text");
 const optionsBox = document.getElementById("options");
 const nextBtn = document.getElementById("next-btn");
@@ -33,12 +33,12 @@ const countdownOverlay = document.getElementById("countdown-overlay");
 const countdownText = document.getElementById("countdown-text");
 const timerDisplay = document.getElementById("timer");
 
-/* ------------------ INITIAL STATE ------------------ */
+/* -quiz starting state */
 nextBtn.style.display = "none";
 prevBtn.style.display = "none";
 quizCard.style.pointerEvents = "none";
 
-/* ------------------ COUNTDOWN ------------------ */
+/* quiz beginning countdown */
 let countdown = 5;
 
 const countdownInterval = setInterval(() => {
@@ -54,7 +54,7 @@ const countdownInterval = setInterval(() => {
   }
 }, 1000);
 
-/* ------------------ MAIN TIMER ------------------ */
+/* main timer */
 let totalSeconds = questions.length * 15;
 let timerInterval;
 
@@ -78,7 +78,7 @@ function updateTimerDisplay() {
   timerDisplay.textContent = `Time: ${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
 }
 
-/* ------------------ QUIZ LOGIC ------------------ */
+/* quiz logic*/
 function loadQuestion() {
   const q = questions[currentIndex];
 
@@ -114,7 +114,7 @@ function selectOption(option) {
   nextBtn.style.display = "inline-block";
 }
 
-/* ------------------ NAVIGATION ------------------ */
+/*navigation- */
 nextBtn.onclick = () => {
   if (currentIndex === questions.length - 1) {
     submitQuiz();
@@ -129,7 +129,7 @@ prevBtn.onclick = () => {
   loadQuestion();
 };
 
-/* ------------------ SUBMISSION ------------------ */
+/* submission */
 function autoSubmitQuiz() {
   alert("Time is up! Your quiz will be submitted.");
   submitQuiz();
