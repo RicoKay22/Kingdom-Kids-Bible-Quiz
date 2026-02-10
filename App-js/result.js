@@ -71,7 +71,7 @@ replayBtn.onclick = () => {
   window.location.href = "rules.html";
 };
 
-// pdf download (placeholder for now)
+// pdf download functionality using html2canvas and jsPDF libraries. It captures the result page as an image and generates a multi-page PDF if necessary, then prompts the user to download it.
 downloadBtn.onclick = async () => {
   document.body.classList.add("pdf-mode");
 

@@ -8,6 +8,9 @@ The app is fun, colorful, timed, and provides instant results with explanations.
 ## ✨ Features
 
 - 👶 Age-based questions (3–6 & 7–12)
+- Rules page adapts dynamically based on age group
+- Questions are shuffled on every attempt (no memorization 👀)
+- Quiz enforces answer selection before moving forward
 - ⏱️ Countdown timer and quiz timer
 - Multiple-choice and True/False questions
 - ✅ Highlighted selected answers
