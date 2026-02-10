@@ -297,6 +297,63 @@ body.welcome button:hover {
   font-size: 0.9rem;
 }
 
+/* styling result page buttons */
+.result-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* button style */
+.result-actions button {
+  flex: 1;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  min-height: 55px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Replay button */
+#replay-btn {
+  background: #537392;
+  color: #f3f4f7;
+  border: 2px solid #cbd5e1;
+}
+
+/* Download button */
+#download-btn {
+  background: #2563eb;
+  color: white;
+}
+
+/* Hover */
+.result-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.result-actions button:active {
+  transform: scale(0.98);
+}
+
+/* for mobile */
+@media (max-width: 600px) {
+  .result-actions {
+    flex-direction: column;
+  }
+
+  .result-actions button {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+
 
 /* PDF download styling */
 
