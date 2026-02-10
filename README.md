@@ -66,24 +66,26 @@ The app is fun, colorful, timed, and provides instant results with explanations.
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+```text
 kingdom-kids-quiz/
+├── index.html        # Welcome page
+├── rules.html        # Quiz rules
+├── quiz.html         # Main quiz page
+├── result.html       # Quiz result page
 │
-├─ index.html          # Welcome page
-├─ rules.html          # Quiz rules
-├─ quiz.html           # Main quiz page
-├─ result.html         # Quiz result page
+├── App-CSS/
+│   └── style.css     # Styles for all pages
 │
-├─ App-CSS/
-│   └─ style.css       # Styles for all pages
+├── App-js/
+│   ├── quiz.js       # Main quiz logic
+│   ├── result.js     # Result page logic
+│   ├── utils.js      # Utility functions
+│   ├── data-3-6.js   # Questions for ages 3–6
+│   └── data-7-12.js  # Questions for ages 7–12
 │
-├─ App-js/
-│   ├─ quiz.js         # Main quiz logic
-│   ├─ result.js       # Result page logic
-│   ├─ utils.js        # Utility functions
-│   ├─ data-3-6.js     # Questions for ages 3-6
-│   └─ data-7-12.js    # Questions for ages 7-12
-│
-└─ images/             # Backgrounds and asset images
+├── images/           # Backgrounds and asset images
 │
 └── README.md
 
