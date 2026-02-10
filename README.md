@@ -64,10 +64,7 @@ The app is fun, colorful, timed, and provides instant results with explanations.
 
 ---
  
-## 📂 Project Structure
-
-
-
+ ## 📂 Project Structure
 ```text
 kingdom-kids-quiz/
 ├── index.html        # Welcome page
@@ -86,7 +83,9 @@ kingdom-kids-quiz/
 │   └── data-7-12.js  # Questions for ages 7–12
 │
 ├── images/           # Backgrounds and asset images
-│└── README.md
+│
+└── README.md
+
 
 ---
 
