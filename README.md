@@ -1,112 +1,71 @@
-🕊️ Kingdom Kids Bible Quiz
-🌟 Overview
+# Kingdom Kids Bible Quiz App 🧒📖
 
-Kingdom Kids Bible Quiz is an educational web application designed to teach children Bible stories, principles, and facts in a fun and interactive way.
+An interactive Bible quiz web application designed for children aged **3–12 years**.  
+The app is fun, colorful, timed, and provides instant results with explanations.
 
-✅ Supports age-based questions for 3-6 and 7-12 years
-✅ Provides instant feedback with explanations
-✅ Offers PDF download for results
+---
 
-📝 Features
+## ✨ Features
 
-✅ Age-based question selection (3-6 & 7-12 years)
+- 👶 Age-based questions (3–6 & 7–12)
+- ⏱️ Countdown timer and quiz timer
+- 🎨 Kid-friendly UI
+- ✅ Highlighted selected answers
+- 📊 Result page with:
+  - Score
+  - Correct & wrong answers
+  - Explanations (when applicable)
+- 📄 Downloadable PDF result
+- 🔒 Prevents back-button cheating
 
-✅ Multiple-choice and True/False questions
+---
 
-✅ Countdown timer for each question
+## 🛠️ Built With
 
-✅ Previous/Next navigation
+- HTML5  
+- CSS3  
+- Vanilla JavaScript  
+- jsPDF & html2canvas (PDF generation)
 
-✅ Personalized final score display
+---
 
-✅ Detailed explanations for incorrect answers
+## 🚀 Live Demo
 
-✅ Responsive and mobile-friendly design
+👉 *(Add your Vercel link here after deployment)*
 
-🚀 Getting Started
-Prerequisites
+---
 
-Modern browser (Chrome, Edge, Firefox, Safari)
+## 📂 Project Structure
 
-Optional: Node.js
- for local server deployment
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/kingdom-kids-quiz.git
-
-
-Navigate to the project folder:
-
-cd kingdom-kids-quiz
-
-
-Open index.html in your browser to start the quiz
-
-Deployment
-
-Deploy on Vercel or Netlify
-
-Ensure all assets (images, CSS, JS) are correctly linked
-
-📁 Project Structure
-kingdom-kids-quiz/
+kingdom-kids-bible-quiz/
 │
-├─ index.html          # Welcome page
-├─ rules.html          # Quiz rules
-├─ quiz.html           # Main quiz page
-├─ result.html         # Quiz result page
+├── index.html
+├── rules.html
+├── quiz.html
+├── result.html
 │
-├─ App-CSS/
-│   └─ style.css       # Styles for all pages
+├── App-CSS/
+│ └── style.css
 │
-├─ App-js/
-│   ├─ quiz.js         # Main quiz logic
-│   ├─ result.js       # Result page logic
-│   ├─ utils.js        # Utility functions
-│   ├─ data-3-6.js     # Questions for ages 3-6
-│   └─ data-7-12.js    # Questions for ages 7-12
+├── App-js/
+│ ├── quiz.js
+│ ├── result.js
+│ └── utils.js
 │
-└─ images/             # Backgrounds and asset images
+├── images/
+│
+└── README.md
 
-💻 Technologies Used
 
-HTML5
+---
 
-CSS3 (Flexbox, Grid, Animations)
+## 👤 Author
 
-JavaScript (ES6 modules)
+**Rico Kay**  
+Frontend Developer | Tech Bro 😎
 
-html2canvas & jsPDF for PDF downloads
+---
 
-🎮 Usage
+## 🙏 Acknowledgement
 
-Enter name, age, and church on the welcome page
-
-Read the rules and start the quiz
-
-Answer questions before the timer runs out
-
-Navigate using Previous and Next buttons
-
-View results and explanations
-
-Download a PDF of the results for printing
-
-🔮 Future Improvements
-
-Add more age groups with additional questions
-
-Include animations and sound effects for feedback
-
-Add user login to save scores
-
-Allow timer customization per question
-
-⚖️ License
-
-This project is open-source and free for educational purposes
-
-✅ Live Demo: [Insert Vercel/Netlify link here]
+Built to help children grow in **wisdom, knowledge, and understanding**.
