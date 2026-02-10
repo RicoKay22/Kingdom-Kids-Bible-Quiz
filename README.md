@@ -9,14 +9,15 @@ The app is fun, colorful, timed, and provides instant results with explanations.
 
 - 👶 Age-based questions (3–6 & 7–12)
 - ⏱️ Countdown timer and quiz timer
-- 🎨 Kid-friendly UI
+- Multiple-choice and True/False questions
 - ✅ Highlighted selected answers
 - 📊 Result page with:
   - Score
   - Correct & wrong answers
-  - Explanations (when applicable)
+  - Detailed explanations for incorrect answers
 - 📄 Downloadable PDF result
-- 🔒 Prevents back-button cheating
+- 🎨 Kid-friendly UI
+
 
 ---
 
@@ -29,6 +30,34 @@ The app is fun, colorful, timed, and provides instant results with explanations.
 
 ---
 
+## 🎮 Usage
+
+- Enter **name**, **age**, and **church** on the welcome page
+
+- Read the **rules** and start the quiz
+
+- Answer questions **before the timer runs out**
+
+- Navigate using **Previous** and **Next** buttons
+
+- View **results** and **explanations**
+
+- **Download a PDF** of the results for printing
+
+---
+
+## 🔮 Future Improvements
+
+- Add **more age groups** with additional questions
+
+- Include **animations and sound effects** for feedback
+
+- Add **user login** to save scores
+
+- Allow **timer customization** per question
+
+---
+
 ## 🚀 Live Demo
 
 👉 *(Add your Vercel link here after deployment)*
@@ -37,22 +66,24 @@ The app is fun, colorful, timed, and provides instant results with explanations.
 
 ## 📂 Project Structure
 
-kingdom-kids-bible-quiz/
+kingdom-kids-quiz/
 │
-├── index.html
-├── rules.html
-├── quiz.html
-├── result.html
+├─ index.html          # Welcome page
+├─ rules.html          # Quiz rules
+├─ quiz.html           # Main quiz page
+├─ result.html         # Quiz result page
 │
-├── App-CSS/
-│ └── style.css
+├─ App-CSS/
+│   └─ style.css       # Styles for all pages
 │
-├── App-js/
-│ ├── quiz.js
-│ ├── result.js
-│ └── utils.js
+├─ App-js/
+│   ├─ quiz.js         # Main quiz logic
+│   ├─ result.js       # Result page logic
+│   ├─ utils.js        # Utility functions
+│   ├─ data-3-6.js     # Questions for ages 3-6
+│   └─ data-7-12.js    # Questions for ages 7-12
 │
-├── images/
+└─ images/             # Backgrounds and asset images
 │
 └── README.md
 
@@ -68,4 +99,4 @@ Frontend Developer | Tech Bro 😎
 
 ## 🙏 Acknowledgement
 
-Built to help children grow in **wisdom, knowledge, and understanding**.
+Built to help children grow in **wisdom, knowledge, and understanding of GOD**.
