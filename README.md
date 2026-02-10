@@ -60,7 +60,7 @@ The app is fun, colorful, timed, and provides instant results with explanations.
 
 ## 🚀 Live Demo
 
-👉 *(Add your Vercel link here after deployment)*
+👉 *vercel link: https://kingdom-kids-bible-quiz.vercel.app/*
 
 ---
  
